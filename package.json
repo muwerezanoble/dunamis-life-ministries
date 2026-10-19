@@ -1,0 +1,24 @@
+{
+  "name":"dunamis-life-ministries",
+  "version":"6.0.1",
+  "private":true,
+  "type":"module",
+  "scripts":{
+    "dev":"vite --host 0.0.0.0",
+    "server":"node server.mjs",
+    "start":"concurrently -k -n TOKEN,APP \"npm:server\" \"npm:dev -- --open\"",
+    "build":"vite build",
+    "preview":"vite preview --host 0.0.0.0"
+  },
+  "dependencies":{
+    "cors":"^2.8.5",
+    "dotenv":"^16.4.7",
+    "express":"^5.1.0",
+    "livekit-client":"^2.15.6",
+    "livekit-server-sdk":"^2.13.3",
+    "lucide-react":"^0.468.0",
+    "react":"^18.3.1",
+    "react-dom":"^18.3.1"
+  },
+  "devDependencies":{"concurrently":"^9.1.2","vite":"^6.0.0"}
+}
